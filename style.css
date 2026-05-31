@@ -1,0 +1,75 @@
+/* GLOBAL PAGE STYLING */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* VERY IMPORTANT – PREVENTS IMAGE DISTORTION */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* TEMPLATE IMAGE FIX (matches your "image main") */
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* OVERRIDE TEMPLATE BEHAVIOR */
+.image-grid .image.main {
+    width: 100%;
+    margin: 0;
+}
+
+/* ENSURE IMAGES SCALE PROPERLY */
+.image-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* OPTIONAL – PROJECT CARD STYLE */
+
+.project-img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+}
+
+.project-img:hover {
+    transform: scale(1.03);
+}
+
+
+/* OPTIONAL – HEADINGS */
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* OPTIONAL – BUTTON CLEANUP */
+
+.button {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+#experience h1 {
+    text-align: center;
+}
